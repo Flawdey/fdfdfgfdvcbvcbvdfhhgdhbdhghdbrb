@@ -1,4 +1,5 @@
 const { Client, Collection } = require("discord.js");
+const { token } = require("./botconfig.json");
 const bot = new Client();
 
 
@@ -11,4 +12,4 @@ const bot = new Client();
 
 
 
-bot.login('NTk1NjU1NTA2NzExMDE5NTMy.XR8t7w.K6BmpBXQrkMkhf3vEZ9HC5dYfLgs');
+bot.login(token);
