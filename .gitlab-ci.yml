@@ -1,0 +1,13 @@
+image: node:latest
+
+cache:
+  paths:
+  - node_modules/
+
+job:
+  script:
+  - apt-get update -qy
+  - apt-get install -y ruby ruby-dev rubygems-integration
+  - npm install
+  - gem install --no-rdoc --no-ri dpl
+  - dpl --provider=heroku --app=jeezus --api-key=5234673c-65e8-4e62-b687-b07269f5307a
