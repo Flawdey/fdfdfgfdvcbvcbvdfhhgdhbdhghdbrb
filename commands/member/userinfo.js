@@ -36,7 +36,7 @@ module.exports = {
         .addField("**Joined server:**", `${moment.utc(member.joinedAt).format('dddd, MMMM Do YYYY, HH:mm:ss')}`, true)
         .addField("**Created At:**", `${message.author.createdAt}`, true)
         .addField("**Roles:**", member.roles.map(roles => `${roles.name}`).join(', '), true)
-        .setFooter(`:) | Replying to ${message.author.username}`, bot.user.displayAvatarURL);
+        .setFooter(`:) || Replying to ${message.author.username}`, bot.user.displayAvatarURL);
 
     message.channel.send(uEmbed);
     }
